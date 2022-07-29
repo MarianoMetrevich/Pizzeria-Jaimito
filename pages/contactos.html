@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="../icons/telefono.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <div class="containcontacto">
+      <header class="navcontacto">
+        <nav>
+          <ul>
+            <li><a href="../index.html" class="r">Inicio</a></li>
+            <li><a href="menu.html" class="r">Menú</a></li>
+            <li><a href="historia.html" class="r">Historia</a></li>
+            <li><a href="sucursales.html" class="r">Sucursales</a></li>
+            <li><a href="contactos.html" class="r">Contacto</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="contenidocontact">
+        <!--Titulo-->
+        <h1 class="contactotitulo">Dejanos tus dudas y comentarios</h1>
+        <section>
+          <!--Formulario-->
+        </section>
+        <form class="formu" action="">
+          <legend>Formulario de contacto</legend>
+          <label class="textoformu1" for="nombre">Nombre:</label>
+          <input class="input0" type="text" name="nombre" id="nombre" />
+
+          <label class="textoformu2" for="apellido">Apellido:</label>
+          <input class="input01" type="text" name="apellido" id="apellido" />
+
+          <label class="textoformu3" for="email">E-mail:</label>
+          <input class="input02" type="text" name="email" id="email" />
+
+          <select class="select1" name="estado civil" id="estado civil">
+            <option value="sol">Soltero/a</option>
+            <option value="casado">Casado/a</option>
+          </select>
+
+          <p class="acepta">Acepta recibir promociones</p>
+          <input class="input2" type="checkbox" name="acepta" value="1" />
+
+          <label class="label1" for="mensaje"
+            >Escriba sus dudas o comentarios
+          </label>
+          <textarea
+            name="mensaje"
+            id="mensaje"
+            cols="30"
+            rows="10"
+            class="textarea1"
+          ></textarea>
+
+          <input type="submit" value="Enviar" class="input1" />
+          <input type="reset" value="Limpiar" class="input1" />
+        </form>
+      </main>
+      <!--Inicio de footer-->
+
+      <footer class="gridfootercontacto">
+        <p>Gracias por visitar nuestra página</p>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,574 @@
+/* {
+  margin: 0;
+  padding: 0;
+}*/
+/* contenedor index */
+.contenedor {
+  width: 100%;
+  max-width: 4000px;
+  margin: 10px auto;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3);
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas:
+    "nav nav nav"
+    "contenidoindex contenidoindex contenidoindex"
+    "footer footer footer";
+}
+.contenedor
+  > div
+  .contenedor
+  .nav
+  .contenedor
+  .contenidoindex
+  .contenedor
+  .footer {
+  padding: 20px;
+  border-radius: 4px;
+}
+.contenedor .nav {
+  grid-area: nav;
+  display: flex;
+}
+.contenedor .contenidoindex {
+  grid-area: contenidoindex;
+  position: relative;
+  top: 100px;
+}
+.contenedor .footer {
+  grid-area: footer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  top: 100px;
+}
+
+/* contenedor menu */
+.menucontainer {
+  width: 100%;
+  max-width: 4000px;
+  margin: 10px auto;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3);
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas:
+    "menunav menunav menunav"
+    "contenidomenu contenidomenu contenidomenu"
+    "footermenu footermenu footermenu";
+}
+.menucontainer > div .menucontainer .menunav .contenidomenu .footermenu {
+  padding: 20px;
+  border-radius: 4px;
+}
+.menucontainer .menunav {
+  grid-area: menunav;
+  display: flex;
+}
+.menucontainer .contenidomenu {
+  grid-area: contenidomenu;
+  position: relative;
+  top: 80px;
+}
+.menucontainer .footermenu {
+  grid-area: footermenu;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+/* contenedor Historia */
+.histocontainer {
+  width: 100%;
+  max-width: 4000px;
+  margin: 10px auto;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3);
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas:
+    "histonav histonav histonav"
+    "histocontent histocontent histocontent"
+    "histogridfooter histogridfooter histogridfooter";
+}
+.histocontainer > div .histonav .histocontent .histogridfooter {
+  padding: 20px;
+  border-radius: 4px;
+}
+.histocontainer .histonav {
+  grid-area: histonav;
+  display: flex;
+}
+.histocontainer .histocontent {
+  grid-area: histocontent;
+  position: relative;
+  top: 100px;
+}
+.histocontainer .histogridfooter {
+  grid-area: histogridfooter;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  top: 100px;
+}
+/* contenedor sucursal */
+.containsucursal {
+  width: 100%;
+  max-width: 4000px;
+  margin: 10px auto;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3);
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas:
+    "sucursalnav sucursalnav sucursalnav"
+    "sucursalcontent sucursalcontent sucursalcontent"
+    "sucurgridfooter sucurgridfooter sucurgridfooter";
+}
+.containsucursal > div .sucursalnav .sucursalcontent .sucurgridfooter {
+  padding: 20px;
+  border-radius: 4px;
+}
+.containsucursal .sucursalnav {
+  grid-area: sucursalnav;
+  display: flex;
+}
+.containsucursal .sucursalcontent {
+  grid-area: sucursalcontent;
+  position: relative;
+  top: 100px;
+}
+.containsucursal .sucurgridfooter {
+  grid-area: sucurgridfooter;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  top: 100px;
+}
+/* contenedor contacto */
+.containcontacto {
+  width: 100%;
+  max-width: 4000px;
+  margin: 10px auto;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3);
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas:
+    "navcontacto navcontacto navcontacto"
+    "contenidocontact contenidocontact contenidocontact"
+    "gridfootercontacto gridfootercontacto gridfootercontacto";
+}
+.containcontacto > div .navcontacto .contenidocontact .gridfootercontacto {
+  padding: 20px;
+  border-radius: 4px;
+}
+.containcontacto .navcontacto {
+  grid-area: navcontacto;
+  display: flex;
+}
+.containcontacto .contenidocontact {
+  grid-area: contenidocontact;
+  position: relative;
+  top: 100px;
+}
+.containcontacto .gridfootercontacto {
+  grid-area: gridfootercontacto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  top: 100px;
+}
+
+/* Media queries */
+@media screen and (max-width: 480px) {
+  .contenedor .footer {
+    background-color: rgba(255, 0, 0, 0.527);
+  }
+  .contenedor .nav {
+    background-color: rgba(0, 0, 0, 0.541);
+    position: relative;
+    left: -4px;
+  }
+
+  /* media html menu */
+  .menucontainer .menunav {
+    background-color: rgba(0, 0, 0, 0.541);
+    position: relative;
+    left: -4px;
+  }
+  table {
+    left: -8px;
+    padding: 10px;
+  }
+  .menucontainer .footermenu {
+    background-color: rgba(255, 0, 0, 0.527);
+    top: 100px;
+  }
+
+  /* media html historia */
+  .histocontainer .histonav {
+    background-color: rgba(0, 0, 0, 0.541);
+    position: relative;
+    left: -4px;
+  }
+  .histocontainer header nav ul li {
+    font-size: 40px;
+  }
+  .histocontainer .historia {
+    font-size: 150px;
+    position: relative;
+    top: -200px;
+    text-align: center;
+  }
+  .histocontainer .subhistoria {
+    font-size: 70px;
+    position: relative;
+    top: -300px;
+    text-align: center;
+  }
+  .histocontainer .histocontent {
+    position: relative;
+    top: 300px;
+  }
+  .histocontainer .resumen {
+    font-size: 30px;
+    margin: auto;
+    top: -300px;
+  }
+  .histocontainer .videohistoria {
+    border-width: 15px;
+    border-color: burlywood;
+    border-style: groove;
+    display: block;
+    margin: auto;
+    width: 920px;
+    height: 700px;
+    position: relative;
+    left: 10px;
+    top: -200px;
+  }
+  .histocontainer .histogridfooter {
+    background-color: rgba(255, 0, 0, 0.527);
+    top: 200px;
+  }
+
+  /* media html sucursales */
+  .containsucursal .sucurgridfooter {
+    background-color: rgba(255, 0, 0, 0.527);
+  }
+  .containsucursal .sucursalnav {
+    background-color: rgba(0, 0, 0, 0.541);
+    position: relative;
+    left: -4px;
+  }
+  .containsucursal .sucursaltitle {
+    font-size: 70px;
+    position: relative;
+    top: -90px;
+    text-align: center;
+  }
+  .containsucursal .map {
+    position: relative;
+    top: -80px;
+    width: 400px;
+    height: 360px;
+  }
+
+  /* media html contactos */
+  .containcontacto .gridfootercontacto {
+    background-color: rgba(255, 0, 0, 0.527);
+  }
+  .containcontacto .navcontacto {
+    background-color: rgba(0, 0, 0, 0.541);
+    position: relative;
+    left: -4px;
+  }
+
+  .containcontacto .contactotitulo {
+    position: relative;
+    top: -60px;
+    font-size: 50px;
+    text-align: center;
+  }
+  .containcontacto .formu {
+    position: relative;
+    top: -75px;
+    left: 3px;
+  }
+}
+
+h1 {
+  color: red;
+  -webkit-text-stroke: 0.1px white;
+  font-family: insanibc;
+  font-size: 140px;
+  position: relative;
+
+  text-align: center;
+}
+@font-face {
+  font-family: insanibc;
+  src: url(../assets/Insanibc.ttf);
+}
+h2 {
+  color: burlywood;
+  font-family: insanibc;
+  -webkit-text-stroke: 1px black;
+  font-size: 70px;
+  position: relative;
+  top: -120px;
+  text-align: center;
+}
+
+header nav ul li {
+  background: rgba(255, 0, 0, 0.432);
+
+  font-size: 30px;
+  font-family: insanibc;
+  list-style: none;
+  display: inline;
+  padding: 2px;
+}
+
+body {
+  background-image: url(../assets/pizzafondo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+a {
+  text-decoration: none;
+  color: wheat;
+  -webkit-text-stroke: 1.3px rgb(0, 0, 0);
+}
+footer p {
+  color: white;
+  font-size: 45px;
+  font-family: insanibc;
+  -webkit-text-stroke: 2.1px black;
+  text-align: center;
+  position: relative;
+}
+table {
+  empty-cells: hide;
+  border: none;
+  text-align: center;
+  color: white;
+  font-size: 45px;
+  font-family: insanibc;
+  -webkit-text-stroke: 2.1px black;
+  position: relative;
+  top: -120px;
+  right: -600px;
+  width: 30%;
+  height: 300px;
+}
+tr td {
+  background-color: rgba(255, 0, 0, 0.308);
+  border-style: dashed;
+  border-width: 2px;
+}
+
+.historia {
+  color: red;
+  -webkit-text-stroke: 0.1px white;
+  font-family: insanibc;
+  font-size: 60px;
+  position: relative;
+  top: 10px;
+  text-align: center;
+}
+.subhistoria {
+  color: burlywood;
+  font-family: insanibc;
+  -webkit-text-stroke: 1px black;
+  font-size: 40px;
+  position: relative;
+  top: -40px;
+  text-align: center;
+}
+.resumen {
+  color: burlywood;
+  font-family: insanibc;
+  -webkit-text-stroke: 1px black;
+  font-size: 20px;
+  width: 1000px;
+  position: relative;
+  top: -40px;
+  text-align: center;
+  margin: auto;
+}
+
+.videohistoria {
+  border-width: 15px;
+  border-color: burlywood;
+  border-style: groove;
+  display: block;
+  margin: auto;
+}
+.histofooter {
+  color: white;
+  font-size: 45px;
+  font-family: insanibc;
+  -webkit-text-stroke: 2.1px black;
+  text-align: center;
+  position: relative;
+  top: -10px;
+}
+
+.sucursaltitle {
+  color: red;
+  -webkit-text-stroke: 0.1px white;
+  font-family: insanibc;
+  font-size: 70px;
+  position: relative;
+  top: 30px;
+  text-align: center;
+}
+
+.map {
+  border-width: 15px;
+  border-color: burlywood;
+  border-style: groove;
+  display: block;
+  margin: auto;
+}
+
+.footersucursal {
+  color: white;
+  font-size: 45px;
+  font-family: insanibc;
+  -webkit-text-stroke: 2.1px black;
+  text-align: center;
+  position: relative;
+  top: 60px;
+}
+.contactotitulo {
+  color: red;
+  -webkit-text-stroke: 0.1px white;
+  font-family: insanibc;
+  font-size: 40px;
+  position: relative;
+  top: -90px;
+  text-align: center;
+}
+
+.formu {
+  color: white;
+
+  display: block;
+  margin: auto;
+  padding: 5px;
+  background-color: rgba(255, 0, 0, 0.301);
+  font-size: 25px;
+  font-family: insanibc;
+  -webkit-text-stroke: 1px black;
+  width: 500px;
+  height: 540px;
+  border-style: dotted;
+  border-color: burlywood;
+  position: relative;
+  left: -20px;
+  top: -80px;
+}
+.textoformu1 {
+  position: relative;
+  right: -10px;
+}
+.textoformu2 {
+  position: relative;
+  left: -276px;
+  top: 30px;
+}
+.textoformu3 {
+  position: relative;
+  left: -170px;
+  top: 35px;
+}
+
+.input0 {
+  position: relative;
+  right: -30px;
+  top: -4px;
+}
+.input01 {
+  position: relative;
+  right: -130px;
+  top: -2px;
+}
+.input02 {
+  position: relative;
+  right: 170px;
+  top: 32px;
+}
+.select1 {
+  color: red;
+  font-size: 15px;
+  -webkit-text-stroke: 1px black;
+  font-family: insanibc;
+  background-color: burlywood;
+  position: relative;
+  top: 45px;
+  left: 10px;
+}
+
+.input1 {
+  color: red;
+  -webkit-text-stroke: 1px black;
+  font-family: insanibc;
+  background-color: burlywood;
+  font-size: 20px;
+  position: relative;
+  top: 100px;
+  right: -16px;
+}
+.acepta {
+  position: relative;
+  top: 40px;
+  left: 15px;
+}
+.input2 {
+  position: relative;
+  right: -370px;
+  top: -16px;
+}
+.label1 {
+  color: white;
+
+  font-size: 25px;
+  font-family: insanibc;
+  -webkit-text-stroke: 1px black;
+
+  position: relative;
+  top: 60px;
+  left: -11px;
+}
+.textarea1 {
+  width: 450px;
+  position: relative;
+  left: 15px;
+  top: 60px;
+}
+
+.footercontacto {
+  color: white;
+  font-size: 45px;
+  font-family: insanibc;
+  -webkit-text-stroke: 2.1px black;
+  text-align: center;
+  position: relative;
+  top: 120px;
+}
