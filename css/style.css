@@ -314,8 +314,15 @@ h1 {
   font-family: insanibc;
   font-size: 140px;
   position: relative;
-
   text-align: center;
+  animation: tituloanimado 2s ease-out infinite;
+}
+@keyframes tituloanimado {
+  from {
+    text-shadow: 0px 0px 10px #fff, 0px 0px 10px #fff, 0px 0px 25px #fff,
+      0px 0px 25px #fff, 0px 0px 25px #fff, 0px 0px 25px #fff, 0px 0px 25px #fff,
+      0px 0px 25px #fff, 0px 0px 25px #fff, 0px 0px 25px #fff;
+  }
 }
 @font-face {
   font-family: insanibc;
