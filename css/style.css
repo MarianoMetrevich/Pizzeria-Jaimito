@@ -347,6 +347,9 @@ header nav ul li {
   display: inline;
   padding: 2px;
 }
+header nav ul li:hover {
+  opacity: 0.8;
+}
 
 body {
   background-image: url(../assets/pizzafondo.jpg);
