@@ -190,124 +190,6 @@
   top: 100px;
 }
 
-/* Media queries */
-@media screen and (max-width: 480px) {
-  .contenedor .footer {
-    background-color: rgba(255, 0, 0, 0.527);
-  }
-  .contenedor .nav {
-    background-color: rgba(0, 0, 0, 0.541);
-    position: relative;
-    left: -4px;
-  }
-
-  /* media html menu */
-  .menucontainer .menunav {
-    background-color: rgba(0, 0, 0, 0.541);
-    position: relative;
-    left: -4px;
-  }
-  table {
-    left: -8px;
-    padding: 10px;
-  }
-  .menucontainer .footermenu {
-    background-color: rgba(255, 0, 0, 0.527);
-    top: 100px;
-  }
-
-  /* media html historia */
-  .histocontainer .histonav {
-    background-color: rgba(0, 0, 0, 0.541);
-    position: relative;
-    left: -4px;
-  }
-  .histocontainer header nav ul li {
-    font-size: 40px;
-  }
-  .histocontainer .historia {
-    font-size: 150px;
-    position: relative;
-    top: -200px;
-    text-align: center;
-  }
-  .histocontainer .subhistoria {
-    font-size: 70px;
-    position: relative;
-    top: -300px;
-    text-align: center;
-  }
-  .histocontainer .histocontent {
-    position: relative;
-    top: 300px;
-  }
-  .histocontainer .resumen {
-    font-size: 30px;
-    margin: auto;
-    top: -300px;
-  }
-  .histocontainer .videohistoria {
-    border-width: 15px;
-    border-color: burlywood;
-    border-style: groove;
-    display: block;
-    margin: auto;
-    width: 920px;
-    height: 700px;
-    position: relative;
-    left: 10px;
-    top: -200px;
-  }
-  .histocontainer .histogridfooter {
-    background-color: rgba(255, 0, 0, 0.527);
-    top: 200px;
-  }
-
-  /* media html sucursales */
-  .containsucursal .sucurgridfooter {
-    background-color: rgba(255, 0, 0, 0.527);
-  }
-  .containsucursal .sucursalnav {
-    background-color: rgba(0, 0, 0, 0.541);
-    position: relative;
-    left: -4px;
-  }
-  .containsucursal .sucursaltitle {
-    font-size: 70px;
-    position: relative;
-    top: -90px;
-    text-align: center;
-  }
-  .containsucursal .map {
-    position: relative;
-    top: -80px;
-    width: 400px;
-    height: 360px;
-  }
-
-  /* media html contactos */
-  .containcontacto .gridfootercontacto {
-    background-color: rgba(255, 0, 0, 0.527);
-  }
-  .containcontacto .navcontacto {
-    background-color: rgba(0, 0, 0, 0.541);
-    position: relative;
-    left: -4px;
-  }
-
-  .containcontacto .contactotitulo {
-    position: relative;
-    top: -60px;
-    font-size: 50px;
-    text-align: center;
-  }
-  .containcontacto .formu {
-    position: relative;
-    top: -75px;
-    left: 3px;
-  }
-}
-
 h1 {
   color: red;
   -webkit-text-stroke: 0.1px white;
@@ -581,4 +463,122 @@ tr td {
   text-align: center;
   position: relative;
   top: 120px;
+}
+
+/* Media queries */
+@media screen and (max-width: 480px) {
+  .contenedor .footer {
+    background-color: rgba(255, 0, 0, 0.527);
+  }
+  .contenedor .nav {
+    background-color: rgba(0, 0, 0, 0.541);
+    position: relative;
+    left: -4px;
+  }
+
+  /* media html menu */
+  .menucontainer .menunav {
+    background-color: rgba(0, 0, 0, 0.541);
+    position: relative;
+    left: -4px;
+  }
+  table {
+    left: -8px;
+    padding: 10px;
+  }
+  .menucontainer .footermenu {
+    background-color: rgba(255, 0, 0, 0.527);
+    top: 100px;
+  }
+
+  /* media html historia */
+  .histocontainer .histonav {
+    background-color: rgba(0, 0, 0, 0.541);
+    position: relative;
+    left: -4px;
+  }
+  .histocontainer header nav ul li {
+    font-size: 40px;
+  }
+  .histocontainer .historia {
+    font-size: 150px;
+    position: relative;
+    top: -200px;
+    text-align: center;
+  }
+  .histocontainer .subhistoria {
+    font-size: 70px;
+    position: relative;
+    top: -300px;
+    text-align: center;
+  }
+  .histocontainer .histocontent {
+    position: relative;
+    top: 300px;
+  }
+  .histocontainer .resumen {
+    font-size: 30px;
+    margin: auto;
+    top: -300px;
+  }
+  .histocontainer .videohistoria {
+    border-width: 15px;
+    border-color: burlywood;
+    border-style: groove;
+    display: block;
+    margin: auto;
+    width: 920px;
+    height: 700px;
+    position: relative;
+    left: 10px;
+    top: -200px;
+  }
+  .histocontainer .histogridfooter {
+    background-color: rgba(255, 0, 0, 0.527);
+    top: 200px;
+  }
+
+  /* media html sucursales */
+  .containsucursal .sucurgridfooter {
+    background-color: rgba(255, 0, 0, 0.527);
+  }
+  .containsucursal .sucursalnav {
+    background-color: rgba(0, 0, 0, 0.541);
+    position: relative;
+    left: -4px;
+  }
+  .containsucursal .sucursaltitle {
+    font-size: 70px;
+    position: relative;
+    top: -90px;
+    text-align: center;
+  }
+  .containsucursal .map {
+    position: relative;
+    top: -80px;
+    width: 400px;
+    height: 360px;
+  }
+
+  /* media html contactos */
+  .containcontacto .gridfootercontacto {
+    background-color: rgba(255, 0, 0, 0.527);
+  }
+  .containcontacto .navcontacto {
+    background-color: rgba(0, 0, 0, 0.541);
+    position: relative;
+    left: -4px;
+  }
+
+  .containcontacto .contactotitulo {
+    position: relative;
+    top: -60px;
+    font-size: 50px;
+    text-align: center;
+  }
+  .containcontacto .formu {
+    position: relative;
+    top: -75px;
+    left: 3px;
+  }
 }
